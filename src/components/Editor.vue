@@ -6,26 +6,38 @@
             <span class="dots"></span>
         </div>
         <div class="code_content">
-            <div class="type_code"></div>
+            <div class="type_code" id="code"></div>
         </div>
     </div>
 </template>
 
 <script>
     import typed from 'typed.js';
-
     export default {
         name: "Editor",
         props: {
           code : String,
         },
+        watch: {
+            code: function (newCode) {
+                document.getElementById('code').innerHTML = '';
+                var Typed = new typed('.type_code', {
+                    strings: [newCode],
+                    typeSpeed: 30,
+                    showCursor: false,
+                    contentType: 'html'
+                });
+            }
+        },
         mounted() {
             var Typed = new typed('.type_code', {
                 strings: [this.code],
-                typeSpeed: 30
+                typeSpeed: 30,
+                showCursor: false,
+                contentType: 'html'
             });
 
-            Typed;
+            Typed.reset();
         }
     }
 </script>
@@ -79,7 +91,12 @@
             border-radius: 5px;
             font-family: Monaco;
             .type_code{
-
+                span{
+                    color: green;
+                }
+                .command{
+                    color: green;
+                }
             }
 
         }
