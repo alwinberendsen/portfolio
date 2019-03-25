@@ -23,7 +23,7 @@
                 document.getElementById('code').innerHTML = '';
                 var Typed = new typed('.type_code', {
                     strings: [newCode],
-                    typeSpeed: 30,
+                    typeSpeed: 10,
                     showCursor: false,
                     contentType: 'html'
                 });
@@ -32,7 +32,7 @@
         mounted() {
             var Typed = new typed('.type_code', {
                 strings: [this.code],
-                typeSpeed: 30,
+                typeSpeed: 10,
                 showCursor: false,
                 contentType: 'html'
             });
