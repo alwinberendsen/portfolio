@@ -14,7 +14,7 @@
 
 <style scoped lang="scss">
     .part_frontend{
-        background: aqua;
+        background: #F6F6F8;
         min-height: 100vh;
         min-width: 100%;
         // Center elements
@@ -26,6 +26,7 @@
         // Text content
         .text_content{
             max-width: 400px;
+            height: 55vh;
             width: 100%;
             margin: 0px 10%;
         }

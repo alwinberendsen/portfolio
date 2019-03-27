@@ -16,6 +16,7 @@
     .part_backend{
         min-height: 100vh;
         min-width: 100%;
+        background: #E3E3E3;
         // Center elements
         display: flex;
         flex-flow: row;
@@ -25,6 +26,7 @@
         // Text content
         .text_content{
             max-width: 400px;
+            height: 55vh;
             width: 100%;
             margin: 0px 10%;
         }

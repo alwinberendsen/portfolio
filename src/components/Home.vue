@@ -13,14 +13,10 @@
 </script>
 
 <style scoped lang="scss">
-    // General styling Home
-    h1{
-        font-family: Arial;
-    }
-
     // Styling elements
     .part_home{
         background-image: url("../assets/header-bg.jpg");
+        background-attachment: fixed;
         -webkit-background-size: cover;
         background-size: cover;
         background-position: center;
@@ -35,6 +31,7 @@
         // Text content
         .text_content{
             max-width: 400px;
+            height: 55vh;
             width: 100%;
             margin: 0px 10%;
         }

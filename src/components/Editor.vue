@@ -6,38 +6,34 @@
             <span class="dots"></span>
         </div>
         <div class="code_content">
-            <div class="type_code" id="code"></div>
+            <!--<div class="type_code" id="code"></div>-->
+            <vue-typed-js :strings="code" :typeSpeed="10" :showCursor="false" ref="type_component">
+                <div class="typing" id="typing_element"></div>
+            </vue-typed-js>
         </div>
     </div>
 </template>
 
 <script>
-    import typed from 'typed.js';
+    import VueTypedJs from 'vue-typed-js/src/components/VueTypedJs.vue'
+
     export default {
         name: "Editor",
         props: {
-          code : String,
+          code : Array,
+        },
+        components: {
+            VueTypedJs,
         },
         watch: {
             code: function (newCode) {
-                document.getElementById('code').innerHTML = '';
-                var Typed = new typed('.type_code', {
-                    strings: [newCode],
-                    typeSpeed: 10,
-                    showCursor: false,
-                    contentType: 'html'
-                });
+                console.log(newCode);
+                this.$refs.type_component.typedObj.destroy();
             }
         },
         mounted() {
-            var Typed = new typed('.type_code', {
-                strings: [this.code],
-                typeSpeed: 10,
-                showCursor: false,
-                contentType: 'html'
-            });
-
-            Typed.reset();
+            console.log(this.code);
+            this.$refs.type_component.initTypedJS();
         }
     }
 </script>
