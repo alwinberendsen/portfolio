@@ -26,13 +26,11 @@
             VueTypedJs,
         },
         watch: {
-            code: function (newCode) {
-                console.log(newCode);
+            code: function () {
                 this.$refs.type_component.typedObj.destroy();
             }
         },
         mounted() {
-            console.log(this.code);
             this.$refs.type_component.initTypedJS();
         }
     }
@@ -44,9 +42,9 @@
     // Styling elements
     .editor{
         background: #fff;
-        max-width: 600px;
+        max-width: 750px;
         width: 100%;
-        min-height: 400px;
+        min-height: 500px;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         border-radius: 5px;
@@ -80,10 +78,10 @@
             padding-top: 40px;
             padding-left: 20px;
             padding-right: 20px;
-            font-size: 14px;
+            font-size: 16px;
             color: #eaeaea;
             background-color: #474747;
-            min-height: 370px;
+            min-height: 460px;
             border-radius: 5px;
             font-family: Monaco;
             .type_code{

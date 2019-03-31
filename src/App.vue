@@ -84,7 +84,7 @@ export default {
           document.getElementById('indicator_2').classList.add('active');
           document.getElementById('indicator_1').classList.remove('active');
           document.getElementById('indicator_3').classList.remove('active');
-          this.codeText = ['/* General Front end skills */ <br><br> .front-end{<br>&nbsp;&nbsp;styling: CSS, SASS, Less; <br>&nbsp;&nbsp;structure: HTML5, Jade; <br>&nbsp;&nbsp;frameworks: Bootstrap; <br>} <br><br> //Front end scripting skills <br><br> function mySkills(){ <br> &nbsp;&nbsp;var codeLanguages = {<br> &nbsp;&nbsp;&nbsp;general: ["Javascript", "JQuery", "JSON"], <br> &nbsp;&nbsp;&nbsp;frameworks: ["VueJS", "NodeJS"]<br>&nbsp;&nbsp;} <br> &nbsp;&nbsp;return codeLanguages; <br>}'];
+          this.codeText = ['/* General Front end skills */ <br><br> .front-end{<br>&nbsp;&nbsp;styling: CSS, SASS, Less; <br>&nbsp;&nbsp;structure: HTML5, Blade; <br>&nbsp;&nbsp;frameworks: Bootstrap; <br>} <br><br> //Front end scripting skills <br><br> function mySkills(){ <br> &nbsp;&nbsp;var codeLanguages = {<br> &nbsp;&nbsp;&nbsp;general: ["Javascript", "JQuery", "JSON"], <br> &nbsp;&nbsp;&nbsp;frameworks: ["VueJS", "NodeJS"]<br>&nbsp;&nbsp;} <br> &nbsp;&nbsp;return codeLanguages; <br>}'];
           break;
         case 2:
           document.getElementById('back-end').scrollIntoView({ block: 'end',  behavior: 'smooth' });
@@ -125,15 +125,19 @@ export default {
 </script>
 
 <style lang="scss">
+  $red: #C60021;
+  $max-mobile: 460px;
+  $max-tablet: 900px;
+  $max-laptop: 1400px;
   // General App styling
   body{
     margin: 0px;
     padding: 0px;
-    white-space: nowrap;
+    //white-space: nowrap;
     overflow: hidden;
     font-family: Arial;
     h1{
-      color: #C60021;
+      color: $red;
     }
   }
 
@@ -142,30 +146,46 @@ export default {
     .editor{
       position: fixed;
       right: 0px;
-      top: 25vh;
+      top: 15vh;
     }
     .navigation_arrows{
+      display: block;
       position: fixed;
+      width: 65px;
+      height: 100%;
+      background: #a5a5a5;
       .next{
-        position: fixed;
         bottom: 10px;
-        left: 10px;
-        font-size: 30px;
-        background: none;
-        border: none;
-        z-index: 2;
       }
       .prev{
+        bottom: 60px;
+      }
+
+      .next, .prev{
         position: fixed;
-        top: 10px;
         left: 10px;
-        font-size: 30px;
+        font-size: 28px;
         background: none;
         border: none;
         z-index: 2;
+        border: 1px solid black;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        &:hover{
+          background: $red;
+          color: #fff;
+          border-color: $red;
+          cursor: pointer;
+        }
+        &:focus{
+          outline: none;
+        }
       }
       .nav_indication{
-        min-height: 100vh;
+        min-height: 100%;
         position: fixed;
         display: flex;
         flex-flow: row;
@@ -188,10 +208,23 @@ export default {
             &.active{
               height: 5px;
               width: 45px;
-              background: #C60021;
+              background: $red;
             }
           }
         }
+      }
+    }
+
+    // Responsive
+    @media screen and (max-width: $max-mobile){
+      .editor{
+        display: none;
+      }
+      .text_content{
+        max-width: 100% !important;
+        margin: 0px !important;
+        padding-left: 70px;
+        padding-right: 20px;
       }
     }
   }

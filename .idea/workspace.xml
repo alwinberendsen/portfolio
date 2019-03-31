@@ -2,38 +2,66 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad8d7594-3859-4eca-a6b8-226c806b9d8a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/eslint-loader/0e611cbe31ee4f4cb9a4c79db825c010ae8ca34a.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/eslint-loader/2056bbaeb8e2727ddf21eb4f528d4cd515c0b789.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/eslint-loader/297fcc12e979f8477b69ff6486a038f3cd44104a.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/eslint-loader/30f601a4eef8dd7359294157277c484a9d0686ef.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/eslint-loader/38354cfc6d48a4e9b0f9cd6f09656417960f6ca8.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/eslint-loader/384b43404d60c9f65e193576ffbe47fb6d81eb10.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/eslint-loader/434cb27794609afc630867613f6fc68e933bace0.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/eslint-loader/53b27cac683e28cc934a76bc5a826edc88929e4f.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/eslint-loader/5ad20f25f817339cb67f918ee87f46d43339cad5.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/eslint-loader/605f3c7d5df9e9e0485057ff1c7c47f309ae01b9.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/eslint-loader/6b4010ce70803f390951da510d0e628c01f67685.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/eslint-loader/781f39d5d70ecaeed6430b22df6a56f5e9bb4a26.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/eslint-loader/7deacb6153f340eb1e4ff4320ae0e6d37f8b8f93.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/eslint-loader/8985ef9eb5b19246a8dcee57584e42a0c4105944.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/eslint-loader/dba67b8daf4c365e03bfdefcd6aa00807384145e.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/eslint-loader/dbb8bc517c885ea5c50b4a1cc16d5b18e9518f0d.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/eslint-loader/e04ab14ee6c9c8f8227e63ea59f9a997a932ff85.json.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/358f95fb8fcfd50cbccd8e94ea0b95ce.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/358f95fb8fcfd50cbccd8e94ea0b95ce.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/59860aae11b841fb8bbf7303460e5ea2.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/59860aae11b841fb8bbf7303460e5ea2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/c2d79e4dfd7b6e0f67366c80c5b31bc1.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/c2d79e4dfd7b6e0f67366c80c5b31bc1.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/c7e83eeb1d6a9e156a59b8dc93156d09.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/c7e83eeb1d6a9e156a59b8dc93156d09.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/f98f579b3efba7318690c51db8c22593.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/f98f579b3efba7318690c51db8c22593.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/fae30a99a4fa9b40101093c203672a9e.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/fae30a99a4fa9b40101093c203672a9e.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/00165e14caaeb5ba3dd06ad4028b0c86.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/00165e14caaeb5ba3dd06ad4028b0c86.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/19b448bf50c768fd2f33a2cb09c6aa63.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/19b448bf50c768fd2f33a2cb09c6aa63.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/1b95dd01bfb28bdd93ea1f0b16c1271d.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/1b95dd01bfb28bdd93ea1f0b16c1271d.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/1eedeb0e5d709bf4750a031846921de9.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/1eedeb0e5d709bf4750a031846921de9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/2035602aae51931e72f55c90999f84dd.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/2035602aae51931e72f55c90999f84dd.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/235744248d95638a56856f4d3a5eb7e6.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/235744248d95638a56856f4d3a5eb7e6.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/287034bca4de0399e6cc8d55cf12bcbd.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/287034bca4de0399e6cc8d55cf12bcbd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/34b82e1aafccf4702664624e03aa1eef.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/34b82e1aafccf4702664624e03aa1eef.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/39787c0b9c29a9925b784e1d0eae6a37.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/39787c0b9c29a9925b784e1d0eae6a37.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/40f0f3893a90763e4b628548e9196708.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/40f0f3893a90763e4b628548e9196708.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/477ea1fbd728eafe6539f87253ae37ae.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/477ea1fbd728eafe6539f87253ae37ae.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/4ed073d400ffa9e9e91722c03a22bfa6.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/4ed073d400ffa9e9e91722c03a22bfa6.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/53ed1a66a35ee2b8962d2dbbbd8253dd.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/53ed1a66a35ee2b8962d2dbbbd8253dd.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/624bd1b4a88e7a990b2af916c37219c7.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/624bd1b4a88e7a990b2af916c37219c7.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/6d436df8adfbf3caf54875a77593604f.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/6d436df8adfbf3caf54875a77593604f.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/7f32772c10e219dacbb59046621f07fd.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/7f32772c10e219dacbb59046621f07fd.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/8014c1245f6ca8644f2a1869d4787b84.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/8014c1245f6ca8644f2a1869d4787b84.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/86c5b02ea4ba679ec31839de38d03554.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/86c5b02ea4ba679ec31839de38d03554.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/9a578dd42600f005b6028bf3ea28390a.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/9a578dd42600f005b6028bf3ea28390a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/9b94a483467d94f92fbe2e4368db468c.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/9b94a483467d94f92fbe2e4368db468c.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/a6acb7ca0d3810f9357a96845c3214e8.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/a6acb7ca0d3810f9357a96845c3214e8.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/a76c2eabc3b21ce900f99138fd70aca3.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/a76c2eabc3b21ce900f99138fd70aca3.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/b0554d61c037d14d3596ec06647dd791.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/b0554d61c037d14d3596ec06647dd791.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/b0f65e89be11625ca4ab3edd16cb38f6.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/b0f65e89be11625ca4ab3edd16cb38f6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/b6c79a5e2b0ee27e9e0a9f495767bf10.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/b6c79a5e2b0ee27e9e0a9f495767bf10.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/b8fe7686560cf9c6c07968dd3ffa426f.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/b8fe7686560cf9c6c07968dd3ffa426f.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/bbf1a8bffe1160fcd135f8191fe60e02.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/bbf1a8bffe1160fcd135f8191fe60e02.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/c3979d2cf7fe24a37ad3f9c8c45c4f89.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/c3979d2cf7fe24a37ad3f9c8c45c4f89.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/ed4e9eddb510b22e2ca2e361ffff571c.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/ed4e9eddb510b22e2ca2e361ffff571c.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vue-typed-js/src/components/VueTypedJs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vue-typed-js/src/components/VueTypedJs.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/f255d49711b6b644b6ebc8b2d206de34.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/f255d49711b6b644b6ebc8b2d206de34.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BackEndDevelopment.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BackEndDevelopment.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Editor.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Editor.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FrontEndDevelopment.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FrontEndDevelopment.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/IndustrialAutomation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/IndustrialAutomation.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Editor.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-18">
-              <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+            <state relative-caret-position="812">
+              <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -68,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/FrontEndDevelopment.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="254">
-              <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="28" />
+              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -76,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+            <state relative-caret-position="435">
+              <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -85,8 +113,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="692">
-              <caret line="190" column="34" selection-start-line="190" selection-start-column="34" selection-end-line="190" selection-end-column="34" />
+            <state relative-caret-position="361">
+              <caret line="135" column="6" selection-start-line="135" selection-start-column="6" selection-end-line="135" selection-end-column="6" />
               <folding>
                 <element signature="e#494#515#0" expanded="true" />
                 <element signature="e#652#711#0" expanded="true" />
@@ -154,6 +182,29 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package-lock.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="29">
+              <caret line="1" column="20" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/IndustrialAutomation.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="145">
@@ -165,8 +216,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/BackEndDevelopment.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="28" />
+            <state>
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -181,11 +232,12 @@
       <list>
         <option value="$PROJECT_DIR$/babel.config.js" />
         <option value="$PROJECT_DIR$/node_modules/vue-typed-js/src/components/VueTypedJs.vue" />
-        <option value="$PROJECT_DIR$/src/components/Editor.vue" />
-        <option value="$PROJECT_DIR$/src/components/Home.vue" />
         <option value="$PROJECT_DIR$/src/components/FrontEndDevelopment.vue" />
         <option value="$PROJECT_DIR$/src/components/BackEndDevelopment.vue" />
         <option value="$PROJECT_DIR$/src/components/IndustrialAutomation.vue" />
+        <option value="$PROJECT_DIR$/src/components/Editor.vue" />
+        <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$PROJECT_DIR$/src/components/Home.vue" />
         <option value="$PROJECT_DIR$/src/App.vue" />
       </list>
     </option>
@@ -262,20 +314,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553449674170</updated>
-      <workItem from="1553449675462" duration="14145000" />
+      <workItem from="1553449675462" duration="17645000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14145000" />
+    <option name="totallyTimeSpent" value="17645000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2074392" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11517077" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -345,31 +397,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Editor.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18">
-          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BackEndDevelopment.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/FrontEndDevelopment.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
-          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="28" />
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -380,10 +411,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/BackEndDevelopment.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Editor.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="812">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="190" column="34" selection-start-line="190" selection-start-column="34" selection-end-line="190" selection-end-column="34" />
+        <state relative-caret-position="361">
+          <caret line="135" column="6" selection-start-line="135" selection-start-column="6" selection-end-line="135" selection-end-column="6" />
           <folding>
             <element signature="e#494#515#0" expanded="true" />
             <element signature="e#652#711#0" expanded="true" />
