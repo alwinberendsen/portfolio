@@ -1,44 +1,34 @@
 <template>
   <div id="app">
-    <div class="navigation_arrows">
-      <button class="next" v-on:click="indexUp"><font-awesome-icon icon="chevron-down" /></button>
-      <div class="nav_indication">
+    <div class="part_home">
+      <vue-particles color="#4bffa5" :particleOpacity="0.4" :particlesNumber="60" shapeType="circle" :particleSize="4" linesColor="#4bffa5" :lineOpacity="0.4"></vue-particles>
+      <div class="text_content">
+        <h1>Alwin Berendsen</h1>
+        <p>Software Developer</p>
+        <div class="btns">
+          <a href="https://www.linkedin.com/in/alwin-berendsen-894170101/" class="btn-main" target="_blank">LinkedIn</a>
+          <a href="https://github.com/alwinberendsen/portfolio" class="btn-main" target="_blank">Source code</a>
+        </div>
+      </div>
+      <div class="skill_select">
         <ul>
-          <li><span id='indicator_1'></span></li>
-          <li><span id='indicator_2'></span></li>
-          <li><span id='indicator_3'></span></li>
-          <li><span id='indicator_4'></span></li>
+          <li><span class="arrowPointer">></span><a v-on:click="indexNumber = 1">Front-End Development</a></li>
+          <li><span class="arrowPointer">></span><a v-on:click="indexNumber = 2">Back-End Development</a></li>
+          <li><span class="arrowPointer">></span><a v-on:click="indexNumber = 3">Industrial Automation</a></li>
         </ul>
       </div>
-      <button class="prev" v-on:click="indexDown"><font-awesome-icon icon="chevron-up" /></button>
     </div>
-    <home id="home"></home>
-    <front-end id="front-end"></front-end>
-    <back-end id="back-end"></back-end>
-    <i-a id="ia"></i-a>
-    <editor :code="codeText"></editor>
+    <editor :code="codeText" id="codeEditor"></editor>
   </div>
 </template>
 
 <script>
 // Imports
 import Vue from 'vue'
-import Home from './components/Home.vue';
-import FrontEnd from './components/FrontEndDevelopment.vue';
-import BackEnd from './components/BackEndDevelopment.vue';
-import IA from './components/IndustrialAutomation.vue';
 import editor from './components/Editor.vue';
+import VueParticles from 'vue-particles';
 
-// FontAwesome import
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
-library.add(faChevronUp);
-library.add(faChevronDown);
-Vue.component('font-awesome-icon', FontAwesomeIcon);
-Vue.config.productionTip = false;
+Vue.use(VueParticles)
 
 export default {
   name: 'app',
@@ -47,56 +37,26 @@ export default {
       codeText: [''],
       indexNumber: 0,
       maxIndex: 3,
+      loading: false,
     }
   },
   components: {
-    Home,
-    FrontEnd,
-    BackEnd,
-    IA,
     editor
   },
   methods: {
-    indexUp: function () {
-      if (this.indexNumber < this.maxIndex){
-        this.indexNumber += 1;
-      }else{
-        this.indexNumber = this.maxIndex;
-      }
-    },
-    indexDown: function () {
-      if (this.indexNumber > 0){
-        this.indexNumber -= 1;
-      }else{
-        this.indexNumber = 0;
-      }
-    },
     checkPosition: function (index) {
+      document.getElementById('codeEditor').classList.add('open-Editor');
       switch (index){
         case 0:
-          document.getElementById('home').scrollIntoView({ block: 'end',  behavior: 'smooth' });
-          document.getElementById('indicator_1').classList.add('active');
-          document.getElementById('indicator_2').classList.remove('active');
-          this.codeText = ['root@portfolio: <span class="command">npm run portfolio</span> <br> Starting portfolio... <br> Starting: Database <br> Starting: Server <br> Compiling... <br> Ready!'];
+          this.codeText = ['root@portfolio: <span class="command">npm run portfolio</span> <br> Starting portfolio... <br> Starting: Database <br> Starting: Server <br> Compiling... <br> Ready! Press the close button to start.'];
           break;
         case 1:
-          document.getElementById('front-end').scrollIntoView({ block: 'end',  behavior: 'smooth' });
-          document.getElementById('indicator_2').classList.add('active');
-          document.getElementById('indicator_1').classList.remove('active');
-          document.getElementById('indicator_3').classList.remove('active');
-          this.codeText = ['/* General Front end skills */ <br><br> .front-end{<br>&nbsp;&nbsp;styling: CSS, SASS, Less; <br>&nbsp;&nbsp;structure: HTML5, Blade; <br>&nbsp;&nbsp;frameworks: Bootstrap; <br>} <br><br> //Front end scripting skills <br><br> function mySkills(){ <br> &nbsp;&nbsp;var codeLanguages = {<br> &nbsp;&nbsp;&nbsp;general: ["Javascript", "JQuery", "JSON"], <br> &nbsp;&nbsp;&nbsp;frameworks: ["VueJS", "NodeJS"]<br>&nbsp;&nbsp;} <br> &nbsp;&nbsp;return codeLanguages; <br>}'];
+          this.codeText = ['/* General Front end skills */ <br><br> .front-end{<br>&nbsp;&nbsp;styling: CSS, SASS, Less; <br>&nbsp;&nbsp;structure: HTML5; <br>&nbsp;&nbsp;frameworks: Bootstrap; <br>} <br><br> //Front end scripting skills <br><br> function mySkills(){ <br> &nbsp;&nbsp;var codeLanguages = {<br> &nbsp;&nbsp;&nbsp;general: ["Javascript", "JQuery", "JSON"], <br> &nbsp;&nbsp;&nbsp;frameworks: ["VueJS", "NodeJS"]<br>&nbsp;&nbsp;} <br> &nbsp;&nbsp;return codeLanguages; <br>}'];
           break;
         case 2:
-          document.getElementById('back-end').scrollIntoView({ block: 'end',  behavior: 'smooth' });
-          document.getElementById('indicator_3').classList.add('active');
-          document.getElementById('indicator_2').classList.remove('active');
-          document.getElementById('indicator_4').classList.remove('active');
           this.codeText = ['/* Back end skills */ <br><br> SELECT * FROM Skills WHERE Type = BackEnd <br><br> Query Result: <br><br> Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Type <br> PHP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Code Language <br> MySQL &nbsp;&nbsp;&nbsp;&nbsp; Database Language <br> C &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Code Language <br> VBS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Code Language <br> Wordpress &nbsp;CMS'];
           break;
         case 3:
-          document.getElementById('ia').scrollIntoView({ block: 'end',  behavior: 'smooth' });
-          document.getElementById('indicator_4').classList.add('active');
-          document.getElementById('indicator_3').classList.remove('active');
           this.codeText = ['Sub IA_Skills(ByVal type) <br><br> Dim Skill <br><br> If (type = "PLC") Then <br> &nbsp;&nbsp;Set Skill = "Step 7" <br> &nbsp;&nbsp;Set Skill =  "TIA Portal" <br> End If <br><br> If (type = "SCADA") Then <br> &nbsp;&nbsp;Set Skill = "WinCC Classic" <br> &nbsp;&nbsp;Set Skill = "WinCC TIA Portal" <br> End If <br><br> If (type = "IIOT") Then <br> &nbsp;&nbsp;Set Skill = "Node Red"<br> End If <br><br> End Sub'];
           break;
       }
@@ -112,23 +72,27 @@ export default {
     }
   },
   mounted() {
+    this.checkPosition(0);
+
     // Check local storage for previous values
     if (localStorage.indexNumber) {
-      this.indexNumber = localStorage.indexNumber;
-      this.checkPosition(localStorage.indexNumber);
+      //this.indexNumber = localStorage.indexNumber;
+      //this.checkPosition(localStorage.indexNumber);
     }
     if (localStorage.codeText) {
-      this.codeText = JSON.parse(localStorage.codeText);
+      //this.codeText = JSON.parse(localStorage.codeText);
     }
   }
 }
 </script>
 
 <style lang="scss">
-  $red: #C60021;
-  $max-mobile: 460px;
-  $max-tablet: 900px;
-  $max-laptop: 1400px;
+  $blue: #040F3D;
+  $mintGreen: #4BFFA5;
+
+  $max-mobile: 500px;
+  $max-tablet: 990px;
+  $max-laptop: 1200px;
   // General App styling
   body{
     margin: 0px;
@@ -136,96 +100,160 @@ export default {
     //white-space: nowrap;
     overflow: hidden;
     font-family: Arial;
+    background: #fafafa;
     h1{
-      color: $red;
+      color: $blue;
     }
   }
 
   //Component styling
   #app{
-    .editor{
-      position: fixed;
-      right: 0px;
-      top: 15vh;
-    }
-    .navigation_arrows{
-      display: block;
-      position: fixed;
-      width: 65px;
-      height: 100%;
-      background: #a5a5a5;
-      .next{
-        bottom: 10px;
-      }
-      .prev{
-        bottom: 60px;
+    //Home
+    .part_home{
+      //background: #f2f2f2bf;
+      min-height: 100vh;
+      min-width: 100%;
+      // Center elements
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      vertical-align: center;
+
+      @media screen and (max-width: $max-tablet){
+        display: block;
       }
 
-      .next, .prev{
-        position: fixed;
-        left: 10px;
-        font-size: 28px;
-        background: none;
-        border: none;
-        z-index: 2;
-        border: 1px solid black;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        -ms-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
-        &:hover{
-          background: $red;
-          color: #fff;
-          border-color: $red;
-          cursor: pointer;
+      //Particles effect
+      #particles-js{
+        position: absolute;
+        top: 0px;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      // Text content
+      .text_content{
+        position: relative;
+        z-index: 3;
+        margin: 0px 10%;
+        color: #C6C4C5;
+        @media screen and (max-width: $max-tablet){
+          margin: 0px 60px;
+          margin-top: 100px;
         }
-        &:focus{
-          outline: none;
+        @media screen and (max-width: $max-mobile){
+          margin: 0px 20px;
+          margin-top: 60px;
+        }
+        h1{
+          margin: 0px;
+          font-size: 45px;
+          @media screen and (max-width: $max-mobile){
+            font-size: 30px;
+          }
+        }
+        p{
+          font-size: 26px;
+          margin: 0px;
+          margin-bottom: 20px;
+          @media screen and (max-width: $max-mobile){
+            font-size: 20px;
+          }
+        }
+        .btns{
+          display: inline;
+          .btn-main{
+            display: inline-block;
+            background: $mintGreen;
+            padding: 10px 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            border-radius: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+            color: $blue;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+            text-decoration: none;
+            &:hover{
+              background: $blue;
+              color: #fafafa;
+            }
+          }
         }
       }
-      .nav_indication{
-        min-height: 100%;
-        position: fixed;
-        display: flex;
-        flex-flow: row;
-        align-items: center;
-        vertical-align: middle;
+
+      //Skill Select
+      .skill_select{
+        position: relative;
+        z-index: 2;
+        @media screen and (max-width: $max-tablet){
+          margin: 0px 60px;
+          margin-top: 100px;
+        }
+        @media screen and (max-width: $max-mobile){
+          margin: 0px 20px;
+          margin-top: 60px;
+        }
         ul{
+          list-style: none;
           padding: 0px;
-          span{
-            width: 35px;
-            height: 2px;
-            background-color: black;
-            display: block;
-            margin: 5px 10px;
-            border-radius: 5px;
-            -webkit-transition: all 0.2s;
-            -moz-transition: all 0.2s;
-            -ms-transition: all 0.2s;
-            -o-transition: all 0.2s;
-            transition: all 0.2s;
-            &.active{
-              height: 5px;
-              width: 45px;
-              background: $red;
+          li{
+            margin: 40px 0px;
+            color: $blue;
+            .arrowPointer{
+              font-size: 40px;
+              font-weight: 600;
+              margin-right: 20px;
+              @media screen and (max-width: $max-laptop){
+                font-size: 30px;
+              }
+              @media screen and (max-width: $max-mobile){
+                font-size: 20px;
+              }
+            }
+            a{
+              font-size: 40px;
+              font-weight: 600;
+              transition: all 0.2s;
+              position: relative;
+              background: transparent;
+              z-index: 2;
+              @media screen and (max-width: $max-laptop){
+                font-size: 30px;
+              }
+              @media screen and (max-width: $max-mobile){
+                font-size: 20px;
+              }
+              &:hover{
+                background-color: $mintGreen;
+                cursor: pointer;
+              }
             }
           }
         }
       }
     }
+    // Editor
+    .editor {
+      position: fixed;
+      right: -800px;
+      top: 0px;
+      bottom: 0px;
+      transition: all 0.5s;
+      z-index: 3;
+      &.open-Editor{
+        right: 0px;
+      }
+    }
 
     // Responsive
     @media screen and (max-width: $max-mobile){
-      .editor{
-        display: none;
-      }
-      .text_content{
-        max-width: 100% !important;
-        margin: 0px !important;
-        padding-left: 70px;
-        padding-right: 20px;
-      }
+
     }
   }
 </style>

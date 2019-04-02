@@ -1,7 +1,9 @@
 <template>
     <div class="editor">
         <div class="topbar">
-            <span class="dots"></span>
+            <a v-on:click="closeEditor()">
+                <span class="dots" ></span>
+            </a>
             <span class="dots"></span>
             <span class="dots"></span>
         </div>
@@ -25,6 +27,11 @@
         components: {
             VueTypedJs,
         },
+        methods: {
+          closeEditor: function () {
+              document.getElementById('codeEditor').classList.remove('open-Editor');
+          }
+        },
         watch: {
             code: function () {
                 this.$refs.type_component.typedObj.destroy();
@@ -44,11 +51,11 @@
         background: #fff;
         max-width: 750px;
         width: 100%;
-        min-height: 500px;
+        min-height: 100%;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         border-radius: 5px;
-        margin: 0px 5%;
+        margin: 0px;
         position: relative;
         -webkit-box-shadow: -5px 6px 30px 0px rgba(102,102,102,1);
         -moz-box-shadow: -5px 6px 30px 0px rgba(102,102,102,1);
@@ -69,8 +76,15 @@
                 height: 10px;
                 display: inline-block;
                 margin: 0px 3px;
-                &:first-of-type{
+            }
+            a{
+                .dots{
                     margin-left: 10px;
+                    transition: all 0.2s;
+                    &:hover{
+                        background: red;
+                        cursor: pointer;
+                    }
                 }
             }
         }
@@ -81,7 +95,7 @@
             font-size: 16px;
             color: #eaeaea;
             background-color: #474747;
-            min-height: 460px;
+            min-height: 100%;
             border-radius: 5px;
             font-family: Monaco;
             .type_code{
