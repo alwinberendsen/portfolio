@@ -87,6 +87,8 @@ export default {
 </script>
 
 <style lang="scss">
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800');
+
   $blue: #040F3D;
   $mintGreen: #4BFFA5;
 
@@ -101,6 +103,7 @@ export default {
     overflow: hidden;
     font-family: Arial;
     background: #fafafa;
+    font-family: 'Montserrat';
     h1{
       color: $blue;
     }
